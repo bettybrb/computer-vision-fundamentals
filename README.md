@@ -1,38 +1,34 @@
 # Computer Vision Fundamentals
 
-A collection of practical computer vision implementations exploring fundamental techniques in image processing, feature extraction, classification, video analysis, and motion detection.
+### Classical computer vision from geometric transformations to motion analysis
 
-The project consists of five Jupyter notebooks covering progressively different areas of classical computer vision.
+A collection of five practical computer vision projects implemented in Python, covering geometric image transformations, convolution, video analysis, texture representation and motion-based object counting.
 
 ## Projects
 
-### 1. Image Transformations
-Implements image rotation and horizontal skewing using affine transformations. Experiments compare forward and inverse mapping, interpolation methods, and the effect of changing the order of transformations.
+| Notebook | Topic | Main techniques |
+| --- | --- | --- |
+| `01_image_transformations.ipynb` | Image geometry | rotation, skewing, affine transforms, interpolation |
+| `02_convolution_filtering.ipynb` | Image filtering | convolution, smoothing, Laplacian edge detection |
+| `03_video_segmentation.ipynb` | Video analysis | RGB histograms, histogram intersection |
+| `04_texture_classification.ipynb` | Texture recognition | Local Binary Patterns, histogram descriptors, nearest-neighbour classification |
+| `05_object_counting.ipynb` | Motion analysis | frame differencing, morphology, connected components |
 
-### 2. Convolution and Image Filtering
-Implements 2D convolution and explores averaging, Gaussian-like smoothing, and Laplacian edge detection. Different kernel sizes, shapes, and combinations are compared to investigate their effects on image detail and structure.
+## What I implemented
 
-### 3. Video Segmentation
-Uses RGB colour histograms and histogram intersection to measure similarity between video frames. The approach is applied to consecutive frames to explore simple scene-change detection and temporal variation.
+- affine image rotation and skew transformations;
+- interpolation comparisons;
+- spatial convolution and image filtering;
+- smoothing and edge detection;
+- RGB histogram extraction from video;
+- histogram-intersection similarity;
+- Local Binary Pattern descriptors;
+- nearest-neighbour texture classification;
+- frame differencing and temporal background estimation;
+- morphological processing;
+- connected-component-based moving-object analysis.
 
-### 4. Texture Classification
-Extracts Local Binary Pattern (LBP) features from image regions and combines them into global image descriptors. Histogram intersection and 1-nearest-neighbour classification are then used to distinguish between face and non-face images.
-
-### 5. Motion-Based Object Counting
-Detects and counts moving vehicles in video using frame differencing, thresholding, temporal background estimation, morphological processing, and connected-component analysis.
-
-## Technologies
-
-- Python
-- OpenCV
-- NumPy
-- Matplotlib
-- SciPy
-- scikit-image
-- scikit-learn
-- Jupyter Notebook
-
-## Repository Structure
+## Repository structure
 
 ```text
 computer-vision-fundamentals/
@@ -42,4 +38,5 @@ computer-vision-fundamentals/
 ├── 04_texture_classification.ipynb
 ├── 05_object_counting.ipynb
 ├── requirements.txt
+├── .gitignore
 └── README.md
